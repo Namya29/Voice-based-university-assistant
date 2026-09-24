@@ -1,0 +1,72 @@
+:root {
+  --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  --font-ui: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-body: 'Plus Jakarta Sans', 'Inter', -apple-system, sans-serif;
+
+  --bg-gradient: linear-gradient(135deg, #090d16 0%, #171630 45%, #1e1b4b 80%, #0f172a 100%);
+  --surface-bg: rgba(255, 255, 255, 0.92);
+  --surface-border: rgba(255, 255, 255, 0.6);
+  --surface-shadow: 0 20px 45px -10px rgba(15, 23, 42, 0.08), 0 0 1px 1px rgba(0, 0, 0, 0.04);
+
+  --primary: #4f46e5;
+  --primary-gradient: linear-gradient(135deg, #4f46e5 0%, #6366f1 50%, #8b5cf6 100%);
+  --primary-hover: #4338ca;
+  --primary-light: #eef2ff;
+  --accent-glow: rgba(99, 102, 241, 0.35);
+
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --text-light: #94a3b8;
+
+  --success-bg: #dcfce7;
+  --success-text: #15803d;
+  --warning-bg: #fef3c7;
+  --warning-text: #b45309;
+  --error-bg: #ffe4e6;
+  --error-text: #e11d48;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family: var(--font-body);
+  background: #f8fafc;
+  color: var(--text-main);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: radial-gradient(circle at 10% 20%, rgba(238, 242, 255, 0.8) 0%, rgba(248, 250, 252, 1) 90%);
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  letter-spacing: -0.025em;
+}
+
+button, input, select, textarea {
+  font-family: var(--font-ui);
+}
+
+/* Custom Smooth Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
